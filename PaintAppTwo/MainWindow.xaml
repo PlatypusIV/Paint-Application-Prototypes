@@ -1,0 +1,168 @@
+﻿<Window x:Class="PaintAppTwo.Views.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PaintAppTwo"
+        xmlns:comm="clr-namespace:PaintAppTwo.Commands"
+        xmlns:UC ="clr-namespace:PaintAppTwo.UserControls"
+        
+        mc:Ignorable="d"
+        Title="Second Paint app" MinHeight="450" MinWidth="800"
+        SizeToContent="WidthAndHeight"
+        Background="Gray">
+
+    <Window.CommandBindings>
+        <CommandBinding Command="Open" CanExecute="Open_CanExecute" Executed="Open_Executed" />
+        <CommandBinding Command="New" CanExecute="New_CanExecute" Executed="New_Executed" />
+        <CommandBinding Command="Save" CanExecute="Save_CanExecute" Executed="Save_Executed" />
+        <!--<CommandBinding Command="comm:SaveAs" CanExecute="SaveAs_CanExecute" Executed="SaveAs_Executed" />-->
+        
+    </Window.CommandBindings>
+
+    <Window.Resources>
+        
+    </Window.Resources>
+    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+
+        <DockPanel Grid.Row="0">
+
+            <Menu Margin="1"
+                  DockPanel.Dock="Top"
+                  Name="MainTopMenu">
+
+                <MenuItem Header="_File"
+                          >
+                    <Separator />
+
+                    <MenuItem Command="Open">
+
+                    </MenuItem>
+                    <Separator />
+                    <MenuItem  Command="New">
+                        
+                    </MenuItem>
+                    <Separator />
+                    <MenuItem  Command="Save">
+                    </MenuItem>
+                </MenuItem>
+            </Menu>
+
+            <!--#region Toolbar-->
+            <ToolBarTray Margin="0"
+                         MinHeight="50"
+                         Background="AliceBlue"
+                         DockPanel.Dock="Bottom">
+                <ToolBar>
+                    <Label Content="Brush size(in pixels):"
+                           Margin="1"/>
+                    <TextBox Name="brushSizeTextBox"
+                             Margin="1"
+                             MinWidth="50"
+                             TextChanged="brushSizeTextBox_TextChanged"
+                             />
+                    <Button Name="colorBtn"
+                            Content="Color"
+                            Width="50"
+                            Height="30"
+                            Click="colorBtn_Click"/>
+
+                    <Label Content="Width:"
+                           VerticalAlignment="Center"
+                           Margin="1"/>
+                    
+                    <TextBox Name="PictureSizeXTextBox"
+                             Width="50"
+                             Margin="1"
+                             VerticalAlignment="Center"
+                             TextChanged="XSizeTextBox_TextChanged"/>
+                    
+                    <Label Content="Height:"
+                           VerticalAlignment="Center"
+                           Margin="1"
+                           />
+
+                    <TextBox Name="PictureSizeYTextBox"
+                             Width="50"
+                             Margin="1"
+                             VerticalAlignment="Center"
+                             TextChanged="YSizeTextBox_TextChanged"/>
+
+                    <StackPanel Orientation="Vertical"
+                                VerticalAlignment="Center">
+
+                        <!--<Button Name="eraserBtn"
+                                Width="60"
+                                Height="30"
+                                Click="eraserBtn_Click"
+                                Content="Undo Strokes"
+                                Margin="1"
+                                />-->
+
+                        <Button Name="eraserBtnTwo"
+                            Width="60"
+                            Height="30"
+                            Click="eraserBtnTwo_Click"
+                            Content="Eraser"
+                            Margin="1"
+                            />
+
+                    </StackPanel>
+
+
+                    <Label Content="Eraser size(in pixels):"
+                           Margin="1"
+                           VerticalAlignment="Center"/>
+                    
+                    <TextBox Name="eraserSizeTxtBox"
+                             Width="50"
+                             Margin="1"
+                             TextChanged="eraserSizeTxtBox_TextChanged"/>
+
+                </ToolBar>
+            </ToolBarTray>
+        </DockPanel>
+        <!-- #endRegion-->
+        <UC:ColorPickerUserControl x:Name="ColorPickerUC"
+                                    BorderBrush="Black"
+                                    BorderThickness="1"
+                                    HorizontalAlignment="Right"
+                                    Margin="0,1,0,0"
+                                    MouseLeave="ColorPickerUC_MouseLeave"
+                                     />
+
+
+        <Grid Background="Transparent"
+              VerticalAlignment="Center"
+              HorizontalAlignment="Center"
+              Grid.Row="1">
+            <InkCanvas Name="mainCanvas"
+                       >
+                <InkCanvas.DefaultDrawingAttributes>
+                    <DrawingAttributes x:Name="MainCanvasAttribute"
+                                       Width="3"
+                                       Height="3"
+                                       />
+
+                </InkCanvas.DefaultDrawingAttributes>
+            </InkCanvas>
+        </Grid>
+            <!--<Canvas Background="Transparent"
+                    VerticalAlignment="Stretch"
+                    HorizontalAlignment="Stretch"
+                    Grid.Row="1">
+        </Canvas>
+                -->
+                
+            
+           
+        
+        
+    </Grid>
+</Window>

@@ -1,0 +1,15 @@
+C:\Users\akuma\source\repos\PaintApps\PaintAppOne\bin\Debug\PaintAppOne.exe.config
+C:\Users\akuma\source\repos\PaintApps\PaintAppOne\bin\Debug\PaintAppOne.exe
+C:\Users\akuma\source\repos\PaintApps\PaintAppOne\bin\Debug\PaintAppOne.pdb
+C:\Users\akuma\source\repos\PaintApps\PaintAppOne\obj\Debug\PaintAppOne.csprojAssemblyReference.cache
+C:\Users\akuma\source\repos\PaintApps\PaintAppOne\obj\Debug\MainWindow.g.cs
+C:\Users\akuma\source\repos\PaintApps\PaintAppOne\obj\Debug\App.g.cs
+C:\Users\akuma\source\repos\PaintApps\PaintAppOne\obj\Debug\PaintAppOne_MarkupCompile.cache
+C:\Users\akuma\source\repos\PaintApps\PaintAppOne\obj\Debug\PaintAppOne_MarkupCompile.lref
+C:\Users\akuma\source\repos\PaintApps\PaintAppOne\obj\Debug\MainWindow.baml
+C:\Users\akuma\source\repos\PaintApps\PaintAppOne\obj\Debug\PaintAppOne.g.resources
+C:\Users\akuma\source\repos\PaintApps\PaintAppOne\obj\Debug\PaintAppOne.Properties.Resources.resources
+C:\Users\akuma\source\repos\PaintApps\PaintAppOne\obj\Debug\PaintAppOne.csproj.GenerateResource.cache
+C:\Users\akuma\source\repos\PaintApps\PaintAppOne\obj\Debug\PaintAppOne.csproj.CoreCompileInputs.cache
+C:\Users\akuma\source\repos\PaintApps\PaintAppOne\obj\Debug\PaintAppOne.exe
+C:\Users\akuma\source\repos\PaintApps\PaintAppOne\obj\Debug\PaintAppOne.pdb

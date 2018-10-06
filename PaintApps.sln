@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2026
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaintAppOne", "PaintAppOne\PaintAppOne.csproj", "{EE2E7154-EBE1-41EE-A04D-0EDCB0404E03}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaintAppTwo", "PaintAppTwo\PaintAppTwo.csproj", "{7DD88E2E-3373-4378-AC36-B9DDDE1E97E6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EE2E7154-EBE1-41EE-A04D-0EDCB0404E03}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE2E7154-EBE1-41EE-A04D-0EDCB0404E03}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE2E7154-EBE1-41EE-A04D-0EDCB0404E03}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE2E7154-EBE1-41EE-A04D-0EDCB0404E03}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7DD88E2E-3373-4378-AC36-B9DDDE1E97E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DD88E2E-3373-4378-AC36-B9DDDE1E97E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DD88E2E-3373-4378-AC36-B9DDDE1E97E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DD88E2E-3373-4378-AC36-B9DDDE1E97E6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A91C6AB4-286D-4F1F-84AA-5BB88020F1BB}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,27 @@
+﻿To do:
+	Menu: Open +, New, Save +, Save as.
+
+	Toolbar: size of cursor drawer +
+
+	Saving process: inkcanvas -> bitmap -> selected file extension./ file -> bitmap -> inkcanvas +
+
+	CUSTOM COMMANDS: SaveAs(WILL STILL NOT WORK!)
+
+
+	Check wether brushSizeTextBox has numbers or something else in it. +	
+
+	RGBSelector window./usercontrol +
+	
+	RGBSelector slider current value +
+
+	Picture size+
+
+	Cutting and pasting
+
+	Erase function +
+
+	fix opening a second image +
+
+	add tabs so you can draw several images at once
+
+	Transparent backgrounds for .png's
